@@ -7,7 +7,7 @@ function forgot()
   {
     const con=confirm("Password is:  "+savedUser.pass)
     if(con)
-    window.location.href="Login.html";
+    window.location.href="login.html";
   }    
   else
     alert("Enter valid E-mail");
