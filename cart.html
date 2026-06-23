@@ -1,0 +1,162 @@
+<html>
+<head>
+<style>
+#paymeth{
+position:absolute;
+left:190px;
+}
+#Customer_info{
+background-color:cyan;
+border: 2px solid black; 
+border-radius:5px;
+height:750; width:600;
+position:absolute;
+top:240px;
+right:450px;
+background-image:linear-gradient(110deg, #004e60, white 10%, #004e66);
+  border: 1px solid #00e5ff; 
+  border-radius: 40px;
+  padding: 30px;
+  color: white;
+}
+#div3{
+height:150px;
+width:100%;
+}
+#div2{
+position:absolute;
+right:0px;
+top:55px;
+left:47px;
+}
+#div5{
+position:absolute;
+right:145px;
+top:30px;
+}
+#sp1{
+position:fixed;
+}
+#img2{
+position:fixed;
+right:0px;
+height:30px;
+width:50px;
+top:30px;
+left:25px;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: none; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<div id="div3"><center><img src="logo1.png" width=400 height=200></center><div id="div2"><input type="image" src="cart-logo.png" alt="Button" id="img2" onclick="displayCart()"></a><span id="sp1"></span></div>
+<div id="div5"><a href="login.html"><input type="button" id="btn3" value="Login"></a></div>
+</div>
+<table cellspacing=20 align="center">
+<tr><td><a href="index.html"><img src="button_home.png" id="img1"></a></td><td><a href="Men's.html"><img src="button_mens.png" id="img1"></a></td><td><a href="Women's.html"><img src="button_womens.png" id="img1"></a></td><td><a href="Children.html"><img src="button_kids.png" id="img1"></a></td><td><a href="about.html"><img src="button_about-us.png" id="img1"></a></td></tr>
+</table>
+<center>
+<div id="cart1" height=800 width=400><span id="cart-container"></span><span id="cart-total"></span><span id="buy"></span></div>
+<div id="Customer_info" style="display:none;">
+    <table cellspacing=25 cellpadding=3>
+        <tr>
+            <th colspan="2">Customer Information</th>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Email *"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="First name *"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text" placeholder="Last name *"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="tel" placeholder="Phone no. *"</td>
+        </tr>
+	<tr>
+            <td colspan="2"><strong>Shipping Address:</strong></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><textarea rows="10" cols="50" placeholder="Current Address *"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Town/City *"></td>
+            <td><input type="tel" placeholder="Pin code *"></td>
+        </tr>
+        <tr>
+            <td><label for="state">Select State / UT:</label></td>
+            <td>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>---Select One---</option>
+                    <!-- States -->
+                    <option value="AP">Andhra Pradesh</option>
+                    <option value="AR">Arunachal Pradesh</option>
+                    <option value="AS">Assam</option>
+                    <option value="BR">Bihar</option>
+                    <option value="CG">Chhattisgarh</option>
+                    <option value="GA">Goa</option>
+                    <option value="GJ">Gujarat</option>
+                    <option value="HR">Haryana</option>
+                    <option value="HP">Himachal Pradesh</option>
+                    <option value="JH">Jharkhand</option>
+                    <option value="KA">Karnataka</option>
+                    <option value="KL">Kerala</option>
+                    <option value="MP">Madhya Pradesh</option>
+                    <option value="MH">Maharashtra</option>
+                    <option value="MN">Manipur</option>
+                    <option value="ML">Meghalaya</option>
+                    <option value="MZ">Mizoram</option>
+                    <option value="NL">Nagaland</option>
+                    <option value="OD">Odisha</option>
+                    <option value="PB">Punjab</option>
+                    <option value="RJ">Rajasthan</option>
+                    <option value="SK">Sikkim</option>
+                    <option value="TN">Tamil Nadu</option>
+                    <option value="TG">Telangana</option>
+                    <option value="TR">Tripura</option>
+                    <option value="UP">Uttar Pradesh</option>
+                    <option value="UK">Uttarakhand</option>
+                    <option value="WB">West Bengal</option>
+                    
+                    <!-- Union Territories -->
+                    <option value="AN">Andaman and Nicobar Islands</option>
+                    <option value="CH">Chandigarh</option>
+                    <option value="DN">Dadra and Nagar Haveli and Daman and Diu</option>
+                    <option value="DL">Delhi</option>
+                    <option value="JK">Jammu and Kashmir</option>
+                    <option value="LA">Ladakh</option>
+                    <option value="LD">Lakshadweep</option>
+                    <option value="PY">Puducherry</option>
+                </select>
+            </td>
+        </tr>
+	<tr><td>Payment Method:</td></tr><tr><td> <input type="radio" id="cash" onclick="checkmeth()">Cash on Pay    &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp <input type="radio" id="onlin" onclick="checkmeth()">Online
+/*<input type="checkbox" id="cash" onclick="checkmeth(this)">
+<input type="checkbox" id="onlin" onclick="checkmeth(this)">*/
+	       <div id="paymeth" style="display:none;"><select id="pay" name="online" required><br>
+                    <option value="" disabled selected>---Select One---</option>
+                    <option value="Gpay">Google Pay/Gpay</option>
+                    <option value="Ph_Pay">Phone Pay</option>
+                    <option value="Amaz">Amazone Pay</option>
+                    <option value="paytm">Paytm</option>
+                    <option value="Navi">Navi</option>
+		    </select>
+               </div></td>
+	</tr>
+    </table><br><br><br>
+    <input type="checkbox"><font color="red">I have read and consent to eShopping processing my information in accordance with the Privacy Policy <strong>Fashion HUB</strong> is truted by partner.</font><br><br>
+<input type="button" value="Buy"></div>
+<script src="cartscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menstyle.css">
+</head>
+<body style="color: blue;">
+<!-- Theme Toggle Button (Top Right) -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <!-- Sun Icon (Light Mode) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        
+        <!-- Moon Icon (Dark Mode) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+
+<div id="div3"><center><img src="logo1.png" width=400 height=200></center><div id="div2"><a href="cart.html"><img src="cart-logo.png" id="img2"></a><span id="sp1"></span></div>
+<div id="div5"><a href="login.html"><input type="button" id="btn3" value="Login"></a></div>
+</div>
+<center>
+<table cellspacing=20 align="center">
+<tr><td><a href="index.html"><img src="button_home.png" id="img1"></a></td><td><a href="Men's.html"><img src="button_mens.png" id="img1"></a></td><td><a href="Women's.html"><img src="button_womens.png" id="img1"></a></td><td><a href="Children.html"><img src="button_kids.png" id="img1"></a></td><td><a href="about.html"><img src="button_about-us.png" id="img1"></a></td></tr>
+</table>
+
+<table cellspacing=30 cellpadding=5 align=center>
+<tr><td><img src="men1.jpg" id="mimg3"></td><div id="div1"></div><td><img src="men2.jpg" id="mimg3"></td><td><img src="men3.jpg" id="mimg3"></td><td><img src="men4.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Shirt(cotton)<br>Colour - Blue <br> Size - S/L/XL/XXL<br><strong>&#8377 589</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('100','Shirt(cotton)',397,'men1.jpg')"></td><td>Brand - GenZ t-shirt<br>Colour - Blue,white <br> Size - S/L/XL/XXL<br><strong>&#8377 199</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('101','GenZ TShirt',199)"></td><td>Brand - T-shirt<br>Colour - Cyan <br> Size - S/L/XL/XXL<br><strong>&#8377 455</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('102','TShirt',455)"></td><td>Brand - Check Shirt<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 299</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('103','Check Shirt',299)"></td></tr>
+<tr><td><img src="men5.jpg" id="mimg3"></td><td><img src="men6.jpg" id="mimg3"></td><td><img src="men7.jpg" id="mimg3"></td><td><img src="men8.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - T-shirt(Allen)<br>Colour - white,blue <br> Size - L/XL/XXL<br><strong>&#8377 349</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('104','T-shirt(Allen)',349)"></td><td>Brand - Cotton blend<br>Colour - Blue <br> Size - S/L/XL<br><strong>&#8377 159</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('105','TShirt',159)"></td><td>Brand - Linen Shirt<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 299</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('106','TShirt',299)"></td><td>Brand - Men's Kurta<br>Colour - Violet <br> Size - S/L/XL/XXL<br><strong>&#8377 169</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('107','TShirt',169)"></td></tr>
+<tr><td><img src="men9.jpg" id="mimg3"></td><td><img src="men10.jpg" id="mimg3"></td><td><img src="men12.jpg" id="mimg3"></td><td><img src="men11.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Men's Kurta<br>Colour - Brown <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('108','TShirt',229)"></td><td>Brand - Men chikan kurta<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 249</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('109','TShirt',249)"></td><td>Brand - Kurta <br>Colour - White <br> Size - S/L/XL/XXL<br><strong>&#8377 245</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('110','Kurta',245)"></td><td>Brand - Punjabi<br>Colour - Cream <br> Size - S/L/XL/XXL<br><strong>&#8377 365</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('111','Punjabi',365)"></td></tr>
+<tr><td><img src="men13.jpg" id="mimg3"></td><td><img src="men14.jpg" id="mimg3"></td><td><img src="men15.jpg" id="mimg3"></td><td><img src="men16.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Allen kurta<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 499</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('112','Allen kurta',499)"></td><td>Brand - Full Shirt(combo)<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 449</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('113','Full Shirt(combo)',449)"></td><td>Brand - Formal Shirt pants<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 199</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('114','Formal Shirt pants',199)"></td><td>Brand - Cotton Gengi<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 1599</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('115','Cotton Gengi',1599)"></td></tr>
+<tr><td><img src="men17.jpg" id="mimg3"></td><td><img src="men18.jpg" id="mimg3"></td><td><img src="men19.jpg" id="mimg3"></td><td><img src="men20.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Half Coatetd T-shirt<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 875</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('116','Half Coatetd T-shirt',875)"></td><td>Brand - Cotton TShirt with pants<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 999</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('117','Cotton TShirt with pants',999)"></td><td>Brand - Full dress set<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 539</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('118','Full dress set',539)"></td><td>Brand - Check Shirt with pants<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 509</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('119','Check Shirt with pants',509)"></td></tr>
+<tr><td><img src="men21.jpg" id="mimg3"></td><td><img src="men22.jpg" id="mimg3"></td><td><img src="men23.jpg" id="mimg3"></td><td><img src="men24.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Blue Full Shirt <br>Colour - Prucyan blue <br> Size - S/L/XL/XXL<br><strong>&#8377 339</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('120','Blue Full Shirt',339)"></td><td>Brand - Black kurta<br>Colour - Black <br> Size - S/L/XL/XXL<br><strong>&#8377 655</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('121','Black kurta',655)"></td><td>Brand - White Shirt<br>Colour - White <br> Size - S/L/XL/XXL<br><strong>&#8377 486</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('122','Black kurta',486)"></td><td>Brand - Full Set (red shirt)<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 625</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('123','Full Set (red shirt)',625)"></td></tr>
+<tr><td><img src="men29.jpg" id="mimg3"></td><td><img src="men30.jpg" id="mimg3"></td><td><img src="men31.jpg" id="mimg3"></td><td><img src="men32.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Brown Tshirt<br>Colour - Brown <br> Size - S/L/XL/XXL<br><strong>&#8377 250</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('124','Brown Tshirt',250)"></td><td>Brand - Gen-Z Set<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 770</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('125','Gen-Z Set',770)"></td><td>Brand - White tshirt<br>Colour - White <br> Size - S/L/XL/XXL<br><strong>&#8377 1254</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('126','V',1254)"></td><td>Brand - Formal combo<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 1506.99</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('127','Formal combo',1506.99)"></td></tr>
+<tr><td><img src="men25.jpg" id="mimg3"></td><td><img src="men26.jpg" id="mimg3"></td><td><img src="men28.jpg" id="mimg3"></td><td><img src="men27.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Comfortable Shorts<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 544</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('128','Comfortable Shorts',544)"></td><td>Brand - TShirt, trouser<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 684</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('129','TShirt, trousers',684)"></td><td>Brand - Designer Shirt<br>Colour - Blue <br> Size - S/L/XL/XXL<br><strong>&#8377 979</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('130','Designer Shirt',979)"></td><td>Brand - T-shirt with Combo<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 589.12</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('131','T-shirt with Combo',589.12)"></td></tr>
+</table>
+</center>
+<script src="cartscript.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+<head><title> Log in </title>
+<style>
+body{
+margin: 0;
+min-height:100vh;
+background-color: #0b1a30; 
+background-image: 
+radial-gradient(circle at 80% 40%, rgba(0, 229, 255, 0.25) 0%, transparent 50%),
+radial-gradient(circle at 50% 50%, rgba(0, 122, 255, 0.3) 0%, transparent 60%),
+radial-gradient(circle at 10% 80%, rgba(140, 0, 255, 0.25) 0%, transparent 50%);
+background-blend-mode: screen;}
+#tdiv{
+position:absolute;
+width:350px;
+height:400px;
+top:150px;
+right:550px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;	
+background-image:linear-gradient(110deg, #004e60, white, #004e66);
+  border: 1px solid #00e5ff; 
+  border-radius: 40px;
+  padding: 30px;
+  color: white;
+}
+#sdiv{
+width:100px;
+height:100px;
+}
+#log1{
+height:100px;
+width:100px;
+}
+</style>
+<script src="Login.js">
+</script>
+</head>
+<body>
+<div id="tdiv">
+<div id="sdiv"><img src="login-logo.png" id="log1"><br></div>
+<table cellspacing="5" cellpadding="10">
+<tr><td>Enter Email:</td><td><input type="text" id="txt1" placeholder="Email"></td></tr>
+<tr><td>Enter Password:</td><td><input type="password" id="pass1" placeholder="Password"></td></tr>
+<tr><td></td><td align="right"><input type="button" id="btn1" value="Login" onclick="login()"></td></tr>
+<tr><td></td><td align="right"><a href="forgot_pass.html">Forgot Password</a></td></tr>
+<tr><td></td><td align="right">New User  <a href="signup.html">Signup</a></td></tr>
+</table></div>
+</body>
+</html>
