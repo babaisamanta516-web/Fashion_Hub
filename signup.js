@@ -16,7 +16,7 @@ function signup()
   c=c+1;
   const con=confirm("Signup Successful. Do you want to move to Signin Page ?")
   if(con)
-    window.location.href="Login.html";
+    window.location.href="login.html";
   else
     window.location.href="index.html";
   }
