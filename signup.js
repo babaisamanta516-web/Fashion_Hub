@@ -18,7 +18,7 @@ function signup()
   if(con)
     window.location.href="Login.html";
   else
-    window.location.href="home1.html";
+    window.location.href="index.html";
   }
   else{
    alert("Signup Failed");
