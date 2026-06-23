@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light / Dark Mode Toggle</title>
+    <link rel="stylesheet" href="styletheme.css">
+</head>
+<body>
+
+    <!-- Theme Toggle Button (Top Right) -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <!-- Sun Icon (Light Mode) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        
+        <!-- Moon Icon (Dark Mode) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+    <!-- Demo Content -->
+    <div class="container">
+    </div>
+ <div id="div3"><center><img src="logo1.png" width=400 height=200></center><div id="div2"><input type="button" id="btn1" value="Dark" onclick="mode()"></div><div id="div4"><a href=""><img src="cart-logo.png" id="img2"></a><span id="sp1">0</span></div>
+<div id="div5"><a href="login.html"><input type="button" id="btn3" value="Login"></a></div>
+</div>
+<table cellspacing=20 align="center">
+<tr><td><a href="Home1.html"><img src="button_home.png" id="img1"></a></td><td><a href="Men's.html"><img src="button_mens.png" id="img1"></a></td><td><a href="Women's.html"><img src="button_womens.png" id="img1"></a></td><td><a href="Children.html"><img src="button_kids.png" id="img1"></a></td><td><a href="AboutUs.html"><img src="button_about-us.png" id="img1"></a></td></tr>
+</table>
+<table cellspacing=10 cellpading=100 align="center">
+<tr><td></td><td><div id="div1"></div></td>
+<td></td></tr>
+</table>
+    <script src="script.js"></script>
+</body>
+</html>

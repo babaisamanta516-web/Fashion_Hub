@@ -1,0 +1,195 @@
+/* =========================================
+   CSS VARIABLES (Theme Colors)
+   ========================================= */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f5f5f5;
+    --accent-color: #ff9800;
+    --btn-color: #2196f3;
+    --btn-hover: #1976d2;
+    --border-color: #e0e0e0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --accent-color: #ffd700;
+    --btn-color: #64b5f6;
+    --btn-hover: #42a5f5;
+    --border-color: #333333;
+}
+
+/* =========================================
+   GLOBAL STYLES
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+    min-height: 100vh;
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON (Top Right)
+   ========================================= */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--card-bg);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.theme-toggle svg {
+    position: absolute;
+    transition: all 0.4s ease;
+}
+
+/* Sun Icon - Visible in Light Mode */
+.icon-sun {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    color: var(--accent-color);
+}
+
+/* Moon Icon - Hidden in Light Mode */
+.icon-moon {
+    opacity: 0;
+    transform: scale(0) rotate(-90deg);
+    color: var(--accent-color);
+}
+
+/* =========================================
+   DARK MODE STATE
+   ========================================= */
+[data-theme="dark"] .icon-sun {
+    opacity: 0;
+    transform: scale(0) rotate(90deg);
+}
+
+[data-theme="dark"] .icon-moon {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+/* =========================================
+   DEMO CONTENT
+   ========================================= */
+.container {
+    padding: 80px 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.container p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Demo Button */
+.btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--btn-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+
+
+/* =========================================
+   Main page View Css
+   ========================================= */
+
+
+
+#dis1{
+height:150px;
+width:100%;
+}
+#div3{
+height:150px;
+width:100%;
+}
+#div1{
+height:400px;
+width:730px;
+background-image:url("b6.jpg");}
+#div2{
+position:fixed;
+right:0px;
+top:55px;
+left:47px;
+}
+#div5{
+position:fixed;
+right:145px;
+top:30px;
+}
+#btn1{
+background-color:black;
+color:white;
+padding:2px 5px;
+border-color:black;
+border-radius:5px;
+}
+#btn3{
+padding:2px 5px;
+border-color:black;
+border-radius:5px;
+}
+#btn4{
+background-color:red;
+color:white;
+padding:2px 10px;
+border-color:black;
+border-radius:5px;
+}
+#img2{
+position:fixed;
+right:0px;
+height:30px;
+width:50px;
+top:30px;
+left:25px;
+}

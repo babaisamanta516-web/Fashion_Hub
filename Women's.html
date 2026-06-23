@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menstyle.css">
+</head>
+<body style="color: blue;">
+<!-- Theme Toggle Button (Top Right) -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <!-- Sun Icon (Light Mode) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        
+        <!-- Moon Icon (Dark Mode) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </div>
+
+
+<div id="div3"><center><img src="logo1.png" width=400 height=200></center><div id="div2"><a href="cart.html"><img src="cart-logo.png" id="img2"></a><span id="sp1"></span></div>
+<div id="div5"><a href="login.html"><input type="button" id="btn3" value="Login"></a></div>
+</div>
+<center>
+<table cellspacing=20 align="center">
+<tr><td><a href="index.html"><img src="button_home.png" id="img1"></a></td><td><a href="Men's.html"><img src="button_mens.png" id="img1"></a></td><td><a href="Women's.html"><img src="button_womens.png" id="img1"></a></td><td><a href="Children.html"><img src="button_kids.png" id="img1"></a></td><td><a href="about.html"><img src="button_about-us.png" id="img1"></a></td></tr>
+</table>
+
+<table cellspacing=30 cellpadding=5 align=center>
+<tr><td><img src="wmen1.jpg" id="mimg3"></td><td><img src="wmen2.jpg" id="mimg3"></td><td><img src="wmen3.jpg" id="mimg3"></td><td><img src="wmen5.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Kurti<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 349</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('132','Kurti',349)"></td><td>Brand - Green kurti<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('133','Green kurti',397)"></td><td>Brand - Short Kurti<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 455</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('134','Short Kurti',455)"></td><td>Brand - slaveless top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 299</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('135','slaveless top',299)"></td></tr>
+<tr><td><img src="wmen6.jpg" id="mimg3"></td><td><img src="wmen7.jpg" id="mimg3"></td><td><img src="wmen8.jpg" id="mimg3"></td><td><img src="wmen9.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - long kurti<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 665</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('136','long kurti',665)"></td><td>Brand - Long kurti with dupatta<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 449</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('137','Long kurti with dupatta',449)"></td><td>Brand - full top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 654</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('138','full top',654)"></td><td>Brand - Short top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 600</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('139','Short top',600)"></td></tr>
+<tr><td><img src="wmen10.jpg" id="mimg3"></td><td><img src="wmen11.jpg" id="mimg3"></td><td><img src="wmen12.jpg" id="mimg3"></td><td><img src="wmen13.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Short top in red<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('140','TShirt',349)"></td><td>Brand - Stylish Shirt<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('141','TShirt',349)"></td><td>Brand - Short shirt<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('142','TShirt',349)"></td><td>Brand - Short shirt full sets<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('143','TShirt',349)"></td></tr>
+<tr><td><img src="wmen14.jpg" id="mimg3"></td><td><img src="wmen15.jpg" id="mimg3"></td><td><img src="wmen16.jpg" id="mimg3"></td><td><img src="wmen17.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Designer top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('144','TShirt',349)"></td><td>Brand - Designer Dress set<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('145','TShirt',349)"></td><td>Brand - Short Coated dress<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('146','TShirt',349)"></td><td>Brand - Gym dress<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('147','TShirt',349)"></td></tr>
+<tr><td><img src="wmen18.jpg" id="mimg3"></td><td><img src="wmen19.jpg" id="mimg3"></td><td><img src="wmen20.jpg" id="mimg3"></td><td><img src="wmen21.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Brown tops<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('148','TShirt',349)"></td><td>Brand - Clothy Fashion dress<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('149','TShirt',349)"></td><td>Brand - Office DRess<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('150','TShirt',349)"></td><td>Brand - Walking dress<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('151','TShirt',349)"></td></tr>
+<tr><td><img src="wmen22.jpg" id="mimg3"></td><td><img src="wmen23.jpg" id="mimg3"></td><td><img src="wmen24.jpg" id="mimg3"></td><td><img src="wmen25.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Genz dress set<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('152','TShirt',349)"></td><td>Brand - combo set women<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('153','TShirt',349)"></td><td>Brand - Long kurti wit plazo<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('154','TShirt',349)"></td><td>Brand - brown kurti<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('155','TShirt',349)"></td></tr>
+<tr><td><img src="wmen26.jpg" id="mimg3"></td><td><img src="wmen27.jpg" id="mimg3"></td><td><img src="wmen28.jpg" id="mimg3"></td><td><img src="wmen29.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Comfort pants<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('156','TShirt',349)"></td><td>Brand - Gen z dress<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('157','TShirt',349)"></td><td>Brand - One piece<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('158','TShirt',349)"></td><td>Brand - Frock<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('159','TShirt',349)"></td></tr>
+<tr><td><img src="wmen30.jpg" id="mimg3"></td><td><img src="wmen31.jpg" id="mimg3"></td><td><img src="wmen32.jpg" id="mimg3"></td><td><img src="wmen33.jpg" id="mimg3"></td></tr>
+<tr><td>Brand - Color ful Tops<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('160','TShirt',349)"></td><td>Brand - Jeans<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('161','TShirt',349)"></td><td>Brand - Green long top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('162','TShirt',349)"></td><td>Brand - Full set top<br>Colour - Multicolour <br> Size - S/L/XL/XXL<br><strong>&#8377 397</strong><input type="button" id="btn2" value="Add to cart" onclick="addToCart('163','TShirt',349)"></td></tr>
+</table>
+</center>
+<script src="cartscript.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head><title> Sign up </title>
+<script src="signup.js"></script>
+<style>
+body{
+margin: 0;
+min-height:100vh;
+background-color: #0b1a30; 
+background-image: 
+radial-gradient(circle at 80% 40%, rgba(0, 229, 255, 0.25) 0%, transparent 50%),
+radial-gradient(circle at 50% 50%, rgba(0, 122, 255, 0.3) 0%, transparent 60%),
+radial-gradient(circle at 10% 80%, rgba(140, 0, 255, 0.25) 0%, transparent 50%);
+background-blend-mode: screen;}
+#tdiv{
+position:absolute;
+width:400px;
+height:450px;
+top:110px;
+right:550px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;	
+background-image:linear-gradient(110deg, #004e60, white, #004e66);
+  border: 1px solid #00e5ff; 
+  border-radius: 40px;
+  padding: 30px;
+  color: white;
+}
+#sdiv{
+width:100px;
+height:120px;
+}
+#log1{
+height:90px;
+width:100px;
+}
+</style>
+</head>
+<body>
+<div id="tdiv">
+<div id="sdiv"><img src="login2.png" id="log1"><br></div>
+<table cellspacing="5" cellpadding="10">
+<tr><td>First Name:</td><td><input type="text" id="txt1" placeholder="First Name"></td></tr>
+<tr><td>Last Name:</td><td><input type="text" id="txt2" placeholder="Last Name"></td></tr>
+<tr><td>Email Id:</td><td><input type="text" id="txt3" placeholder="Email"></td></tr>
+<tr><td><input type="date" id="txt4"></td></tr>
+<tr><td>Phone No.:</td><td><input type="tel" id="num1" placeholder="Phone Number"></td></tr>
+<tr><td>Password:</td><td><input type="password" id="pass1" placeholder="password"></td></tr>
+<tr><td>Confirm Password:</td><td><input type="password" id="pass2" placeholder="Confirm password"></td></tr>
+<tr><td><input type="button" id="btn1" value="Sign Up" onclick="signup()"></td></tr>
+</table>
+</div>
+</body>
+</html>
